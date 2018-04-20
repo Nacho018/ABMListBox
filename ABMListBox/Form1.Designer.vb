@@ -27,6 +27,8 @@ Partial Class Form1
         Me.baja = New System.Windows.Forms.Button
         Me.Modificar = New System.Windows.Forms.Button
         Me.TextBox1 = New System.Windows.Forms.TextBox
+        Me.Enumerar = New System.Windows.Forms.Button
+        Me.Alfabetizar = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'ListBox1
@@ -39,7 +41,7 @@ Partial Class Form1
         '
         'Alta
         '
-        Me.Alta.Location = New System.Drawing.Point(199, 29)
+        Me.Alta.Location = New System.Drawing.Point(196, 24)
         Me.Alta.Name = "Alta"
         Me.Alta.Size = New System.Drawing.Size(57, 34)
         Me.Alta.TabIndex = 1
@@ -48,7 +50,7 @@ Partial Class Form1
         '
         'baja
         '
-        Me.baja.Location = New System.Drawing.Point(199, 95)
+        Me.baja.Location = New System.Drawing.Point(196, 86)
         Me.baja.Name = "baja"
         Me.baja.Size = New System.Drawing.Size(54, 38)
         Me.baja.TabIndex = 2
@@ -57,7 +59,7 @@ Partial Class Form1
         '
         'Modificar
         '
-        Me.Modificar.Location = New System.Drawing.Point(196, 160)
+        Me.Modificar.Location = New System.Drawing.Point(196, 209)
         Me.Modificar.Name = "Modificar"
         Me.Modificar.Size = New System.Drawing.Size(65, 40)
         Me.Modificar.TabIndex = 3
@@ -66,16 +68,40 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(36, 235)
+        Me.TextBox1.Location = New System.Drawing.Point(29, 274)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(142, 20)
         Me.TextBox1.TabIndex = 0
+        '
+        'Enumerar
+        '
+        Me.Enumerar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Enumerar.Location = New System.Drawing.Point(196, 161)
+        Me.Enumerar.Name = "Enumerar"
+        Me.Enumerar.Size = New System.Drawing.Size(65, 42)
+        Me.Enumerar.TabIndex = 5
+        Me.Enumerar.Text = "Enumerar"
+        Me.Enumerar.UseVisualStyleBackColor = False
+        '
+        'Alfabetizar
+        '
+        Me.Alfabetizar.BackColor = System.Drawing.Color.Red
+        Me.Alfabetizar.ForeColor = System.Drawing.Color.Honeydew
+        Me.Alfabetizar.Location = New System.Drawing.Point(197, 130)
+        Me.Alfabetizar.Name = "Alfabetizar"
+        Me.Alfabetizar.Size = New System.Drawing.Size(64, 29)
+        Me.Alfabetizar.TabIndex = 6
+        Me.Alfabetizar.Text = "Alfabetizar"
+        Me.Alfabetizar.UseVisualStyleBackColor = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(292, 273)
+        Me.BackColor = System.Drawing.Color.LightSkyBlue
+        Me.ClientSize = New System.Drawing.Size(402, 322)
+        Me.Controls.Add(Me.Alfabetizar)
+        Me.Controls.Add(Me.Enumerar)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Modificar)
         Me.Controls.Add(Me.baja)
@@ -92,5 +118,7 @@ Partial Class Form1
     Friend WithEvents baja As System.Windows.Forms.Button
     Friend WithEvents Modificar As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Enumerar As System.Windows.Forms.Button
+    Friend WithEvents Alfabetizar As System.Windows.Forms.Button
 
 End Class
