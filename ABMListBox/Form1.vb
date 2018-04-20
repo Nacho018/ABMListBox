@@ -2,6 +2,14 @@
 
 Public Class Form1
 
+    Dim alfa As Boolean = False
+
+
+    Dim enumerado As Boolean = False
+
+
+
+
 
     Private Sub Alta_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Alta.Click
         '"no perder el foco
@@ -54,6 +62,44 @@ Public Class Form1
         TextBox1.Clear()
 
         ListBox1.ClearSelected()
+
+    End Sub
+
+    Private Sub Enumerar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Enumerar.Click
+        Dim x As Integer
+
+        If enumerado Then Exit Sub
+
+        For x = 0 To ListBox1.Items.Count - 1
+
+
+            ListBox1.Items.Item(x) = CStr(x) + " " + ListBox1.Items.Item(x).ToString
+
+
+        Next
+
+
+        TextBox1.Focus()
+        enumerado = True
+
+
+    End Sub
+
+
+    Private Sub Alfabetizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Alfabetizar.Click
+        Dim x As Integer
+
+        If alfa Then Exit Sub
+        For x = 0 To ListBox1.Items.Count - 1
+
+
+            ListBox1.Items.Item(x) = Chr(x + 65) + " " + ListBox1.Items.Item(x).ToString
+
+
+
+        Next
+        TextBox1.Focus()
+        alfa = True
 
     End Sub
 End Class
