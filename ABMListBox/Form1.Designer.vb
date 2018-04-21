@@ -29,6 +29,10 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox
         Me.Enumerar = New System.Windows.Forms.Button
         Me.Alfabetizar = New System.Windows.Forms.Button
+        Me.quitar = New System.Windows.Forms.Button
+        Me.mayuscula = New System.Windows.Forms.Button
+        Me.GrabarXml = New System.Windows.Forms.Button
+        Me.Leer_Xml = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'ListBox1
@@ -75,7 +79,7 @@ Partial Class Form1
         '
         'Enumerar
         '
-        Me.Enumerar.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Enumerar.BackColor = System.Drawing.Color.Lime
         Me.Enumerar.Location = New System.Drawing.Point(196, 161)
         Me.Enumerar.Name = "Enumerar"
         Me.Enumerar.Size = New System.Drawing.Size(65, 42)
@@ -94,12 +98,52 @@ Partial Class Form1
         Me.Alfabetizar.Text = "Alfabetizar"
         Me.Alfabetizar.UseVisualStyleBackColor = False
         '
+        'quitar
+        '
+        Me.quitar.Location = New System.Drawing.Point(392, 35)
+        Me.quitar.Name = "quitar"
+        Me.quitar.Size = New System.Drawing.Size(122, 22)
+        Me.quitar.TabIndex = 7
+        Me.quitar.Text = "quitar"
+        Me.quitar.UseVisualStyleBackColor = True
+        '
+        'mayuscula
+        '
+        Me.mayuscula.Location = New System.Drawing.Point(391, 155)
+        Me.mayuscula.Name = "mayuscula"
+        Me.mayuscula.Size = New System.Drawing.Size(100, 37)
+        Me.mayuscula.TabIndex = 8
+        Me.mayuscula.Text = "mayuscula"
+        Me.mayuscula.UseVisualStyleBackColor = True
+        '
+        'GrabarXml
+        '
+        Me.GrabarXml.Location = New System.Drawing.Point(296, 265)
+        Me.GrabarXml.Name = "GrabarXml"
+        Me.GrabarXml.Size = New System.Drawing.Size(80, 54)
+        Me.GrabarXml.TabIndex = 9
+        Me.GrabarXml.Text = "Grabar_xml"
+        Me.GrabarXml.UseVisualStyleBackColor = True
+        '
+        'Leer_Xml
+        '
+        Me.Leer_Xml.Location = New System.Drawing.Point(426, 267)
+        Me.Leer_Xml.Name = "Leer_Xml"
+        Me.Leer_Xml.Size = New System.Drawing.Size(87, 51)
+        Me.Leer_Xml.TabIndex = 10
+        Me.Leer_Xml.Text = "Leer"
+        Me.Leer_Xml.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSkyBlue
-        Me.ClientSize = New System.Drawing.Size(402, 322)
+        Me.ClientSize = New System.Drawing.Size(575, 322)
+        Me.Controls.Add(Me.Leer_Xml)
+        Me.Controls.Add(Me.GrabarXml)
+        Me.Controls.Add(Me.mayuscula)
+        Me.Controls.Add(Me.quitar)
         Me.Controls.Add(Me.Alfabetizar)
         Me.Controls.Add(Me.Enumerar)
         Me.Controls.Add(Me.TextBox1)
@@ -120,5 +164,9 @@ Partial Class Form1
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Enumerar As System.Windows.Forms.Button
     Friend WithEvents Alfabetizar As System.Windows.Forms.Button
+    Friend WithEvents quitar As System.Windows.Forms.Button
+    Friend WithEvents mayuscula As System.Windows.Forms.Button
+    Friend WithEvents GrabarXml As System.Windows.Forms.Button
+    Friend WithEvents Leer_Xml As System.Windows.Forms.Button
 
 End Class
