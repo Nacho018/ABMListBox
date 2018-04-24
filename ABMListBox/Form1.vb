@@ -41,6 +41,7 @@ Public Class Form1
         '"remueve los items seleccionados
         ListBox1.Items.RemoveAt(ListBox1.SelectedIndex)
 
+        ListBox1.ClearSelected()
 
         TextBox1.Clear()
 
@@ -64,10 +65,10 @@ Public Class Form1
 
 
         ListBox1.Items.Item(ListBox1.SelectedIndex) = TextBox1.Text
-        TextBox1.Clear()
+
 
         ListBox1.ClearSelected()
-
+        TextBox1.Clear()
     End Sub
 
     Private Sub Enumerar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Enumerar.Click

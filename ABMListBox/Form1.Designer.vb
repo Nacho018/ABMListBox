@@ -40,12 +40,12 @@ Partial Class Form1
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Location = New System.Drawing.Point(29, 13)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(125, 212)
+        Me.ListBox1.Size = New System.Drawing.Size(208, 251)
         Me.ListBox1.TabIndex = 4
         '
         'Alta
         '
-        Me.Alta.Location = New System.Drawing.Point(196, 24)
+        Me.Alta.Location = New System.Drawing.Point(240, 23)
         Me.Alta.Name = "Alta"
         Me.Alta.Size = New System.Drawing.Size(57, 34)
         Me.Alta.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class Form1
         '
         'baja
         '
-        Me.baja.Location = New System.Drawing.Point(196, 86)
+        Me.baja.Location = New System.Drawing.Point(243, 86)
         Me.baja.Name = "baja"
         Me.baja.Size = New System.Drawing.Size(54, 38)
         Me.baja.TabIndex = 2
@@ -63,7 +63,7 @@ Partial Class Form1
         '
         'Modificar
         '
-        Me.Modificar.Location = New System.Drawing.Point(196, 209)
+        Me.Modificar.Location = New System.Drawing.Point(240, 209)
         Me.Modificar.Name = "Modificar"
         Me.Modificar.Size = New System.Drawing.Size(65, 40)
         Me.Modificar.TabIndex = 3
@@ -80,7 +80,7 @@ Partial Class Form1
         'Enumerar
         '
         Me.Enumerar.BackColor = System.Drawing.Color.Lime
-        Me.Enumerar.Location = New System.Drawing.Point(196, 161)
+        Me.Enumerar.Location = New System.Drawing.Point(240, 161)
         Me.Enumerar.Name = "Enumerar"
         Me.Enumerar.Size = New System.Drawing.Size(65, 42)
         Me.Enumerar.TabIndex = 5
@@ -91,7 +91,7 @@ Partial Class Form1
         '
         Me.Alfabetizar.BackColor = System.Drawing.Color.Red
         Me.Alfabetizar.ForeColor = System.Drawing.Color.Honeydew
-        Me.Alfabetizar.Location = New System.Drawing.Point(197, 130)
+        Me.Alfabetizar.Location = New System.Drawing.Point(240, 130)
         Me.Alfabetizar.Name = "Alfabetizar"
         Me.Alfabetizar.Size = New System.Drawing.Size(64, 29)
         Me.Alfabetizar.TabIndex = 6
